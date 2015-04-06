@@ -1,0 +1,28 @@
+{
+  "name": "gulp-earl",
+  "version": "0.0.1",
+  "description": "gulp plugin to compile Earl Grey",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "dependencies": {
+    "earlgrey-runtime": ">=0.0.5",
+    "earlgrey": ">=0.0.1",
+    "through2": "^0.6.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/breuleux/gulp-earl.git"
+  },
+  "keywords": [
+    "Earl Grey",
+    "gulp"
+  ],
+  "author": "Olivier Breuleux",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/breuleux/gulp-earl/issues"
+  },
+  "homepage": "https://github.com/breuleux/gulp-earl"
+}
