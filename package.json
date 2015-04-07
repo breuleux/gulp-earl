@@ -7,6 +7,7 @@
     "test": "mocha"
   },
   "dependencies": {
+    "earl-gulp": ">=0.0.1",
     "earlgrey": ">=0.0.1",
     "earlgrey-runtime": ">=0.0.5",
     "gulp-util": "^3.0.4",
