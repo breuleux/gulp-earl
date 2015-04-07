@@ -12,7 +12,8 @@ transformer! provide{file, enc, cb} =
    options = defaults & this where defaults = {
       es5 = true
    }
-   options.source-map and= .compute
+   if file.source-map:
+      options.source-map = .compute
    code =
       try:
          eg.Generator{options}.generate{eg.Source{contents, file.path}}
