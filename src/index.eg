@@ -1,0 +1,25 @@
+
+require:
+   "earlgrey/5" as eg
+   gulp-util as gutil
+   vinyl-sourcemaps-apply as applysm
+   path
+   earl-gulp -> transformer
+
+transformer! provide{file, enc, cb} =
+   contents = file.contents.to-string{.utf8}
+   dest = gutil.replace-extension{file.path, ".js"}
+   options = defaults & this where defaults = {
+      es5 = true
+   }
+   options.source-map and= .compute
+   code =
+      try:
+         eg.Generator{options}.generate{eg.Source{contents, file.path}}
+      catch err:
+         throw new gutil.PluginError{"gulp-earl", err}
+   if code.map:
+      applysm{file, JSON.parse{code.map} &: {file = file.path}}
+   file.contents = new Buffer{code.code}
+   file.path = dest
+   file
