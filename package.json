@@ -4,12 +4,13 @@
   "description": "gulp plugin to compile Earl Grey",
   "main": "lib/index.js",
   "scripts": {
-    "test": "mocha"
+    "prepublish": "earl compile -5rvso lib/ src/",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
     "earl-gulp": ">=0.0.1",
-    "earlgrey": ">=0.0.1",
-    "earlgrey-runtime": ">=0.0.5",
+    "earlgrey": ">=0.0.2",
+    "earlgrey-runtime": ">=0.0.7",
     "gulp-util": "^3.0.4",
     "vinyl-sourcemaps-apply": "^0.1.4"
   },

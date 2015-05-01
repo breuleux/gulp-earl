@@ -1,4 +1,9 @@
 
+gulp-earl
+=========
+
+gulp plugin for [Earl Grey](http://breuleux.github.io/earl-grey/)
+
 Usage
 -----
 
@@ -15,9 +20,9 @@ Usage
 
 ### Earl Grey (using `earl-gulp`)
 
-This might be a bit confusing: `earl-gulp` exports macros to neatly
-define gulp tasks in Earl Grey, whereas `gulp-earl` (this package) is
-to compile `.eg` files.
+`earl-gulp` exports macros to neatly define gulp tasks in Earl Grey,
+whereas `gulp-earl` (this package) is to compile `.eg` files. Don't
+confuse them (maybe I should just merge them...)
 
     require-macros:
        earl-gulp -> task
