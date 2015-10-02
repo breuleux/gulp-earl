@@ -4,13 +4,15 @@
   "description": "gulp plugin to compile Earl Grey",
   "main": "lib/index.js",
   "scripts": {
-    "prepublish": "earl compile -5rvso lib/ src/",
+    "refresh": "earl compile -5vso lib/ src/",
+    "compile": "earl compile -5rvso lib/ src/",
+    "prepublish": "npm run compile",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "earl-gulp": ">=0.0.1",
-    "earlgrey": ">=0.0.2",
-    "earlgrey-runtime": ">=0.0.7",
+    "earl-gulp": ">=0.0.3",
+    "earlgrey": ">=0.0.13",
+    "earlgrey-runtime": ">=0.0.11",
     "gulp-util": "^3.0.4",
     "vinyl-sourcemaps-apply": "^0.1.4"
   },
@@ -19,7 +21,7 @@
     "url": "https://github.com/breuleux/gulp-earl.git"
   },
   "keywords": [
-    "Earl Grey",
+    "earlgrey",
     "gulp"
   ],
   "author": "Olivier Breuleux",
