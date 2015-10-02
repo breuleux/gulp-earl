@@ -1,6 +1,6 @@
 {
   "name": "gulp-earl",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "gulp plugin to compile Earl Grey",
   "main": "lib/index.js",
   "scripts": {
