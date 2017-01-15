@@ -2,7 +2,7 @@
 gulp-earl
 =========
 
-gulp plugin for [Earl Grey](http://breuleux.github.io/earl-grey/)
+gulp plugin for [Earl Grey](http://earl-grey.io)
 
 Usage
 -----
